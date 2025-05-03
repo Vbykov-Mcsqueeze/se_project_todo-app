@@ -34,18 +34,8 @@ const addTodoPopup = new PopupWithForm({
 });
 addTodoPopup.setEventListeners();
 
-// const openModal = (modal) => {
-//   modal.classList.add("popup_visible");
-// };
-
-// const closeModal = (modal) => {
-//   modal.classList.remove("popup_visible");
-// };
-
 function handleEscapeClose(evt) {
   if (evt.key === "Escape") {
-    // find the currently opened modal
-    // and close it
   }
 }
 

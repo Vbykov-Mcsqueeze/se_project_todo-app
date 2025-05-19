@@ -10,7 +10,7 @@ class FormValidator {
     }
 
     _hasInvalidInput() {
-        return this.inputList.some((inputElement) => !inputElement.validity.valid);
+        return this._inputList.some((inputElement) => !inputElement.validity.valid);
     }
 
     _hideInputError(inputElement) {
@@ -29,11 +29,11 @@ class FormValidator {
 
     _toggleButtonState() {
         if (this._hasInvalidInput()) {
-            this.submitButton.classList.add(this.inactiveButtonClass);
-            this.submitButton.disabled = true;
+            this._submitButton.classList.add(this.inactiveButtonClass);
+            this._submitButton.disabled = true;
            } else {
-            this.submitButton.classList.remove(this.inactiveButtonClass);
-            this.submitButton.disabled = false;
+            this._submitButton.classList.remove(this.inactiveButtonClass);
+            this._submitButton.disabled = false;
            }
     }
     
